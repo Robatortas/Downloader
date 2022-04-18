@@ -14,6 +14,7 @@ public class Downloader {
 	private Scanner readInput = new Scanner(System.in);
 	private String input;
 	private String inputLink;
+	private String inputFileName;
 	
 	public Downloader() {
 		console();
@@ -65,8 +66,10 @@ public class Downloader {
 			
 			this.inputLink = readInput.nextLine().toLowerCase();
 			
-			
-//			computeFileDownload();
+			System.out.println("\n" + "Input the file name" + "\n");
+			this.inputFileName = readInput.nextLine().toLowerCase();
+			// TODO: CONVERT INPUTLINK TO A URL!!!
+//			computeFileDownload(inputLink, inputFileName);
 		}
 	}
 	
